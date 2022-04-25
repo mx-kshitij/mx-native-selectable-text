@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.nativeselectabletext.NativeSelectableText" pluginWidget="true" needsEntityContext="true" offlineCapable="true" supportedPlatform="Native"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Selectable Text</name>
+    <description>My widget description</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="source" type="expression" defaultValue="">
+                <caption>Source</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="substringAttr" type="attribute">
+                <caption>Selection attribute</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="selectionStart" type="attribute">
+                <caption>Selection start</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="selectionEnd" type="attribute">
+                <caption>Selection end</caption>
+                <description></description>
+                <attributeTypes>
+                    <attributeType name="Integer"/>
+                </attributeTypes>
+            </property>
+            <property key="textColor" type="expression" defaultValue="">
+                <caption>Text color</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Action 1">
+            <property key="action1Enabled" type="boolean" defaultValue="true">
+                <caption>Enabled</caption>
+                <description></description>
+            </property>
+            <property key="action1Caption" type="expression" defaultValue="'action 1'">
+                <caption>Caption</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="action1" type="action">
+                <caption>Action 1</caption>
+                <description>Action to be performed when user selects this action</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Action 2">
+            <property key="action2Enabled" type="boolean" defaultValue="false">
+                <caption>Enabled</caption>
+                <description></description>
+            </property>
+            <property key="action2Caption" type="expression" defaultValue="'action 2'">
+                <caption>Caption</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="action2" type="action">
+                <caption>Action 2</caption>
+                <description>Action to be performed when user selects this action</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Action 3">
+            <property key="action3Enabled" type="boolean" defaultValue="false">
+                <caption>Enabled</caption>
+                <description></description>
+            </property>
+            <property key="action3Caption" type="expression" defaultValue="'action 3'">
+                <caption>Caption</caption>
+                <description></description>
+                <returnType type="String" />
+            </property>
+            <property key="action3" type="action">
+                <caption>Action 3</caption>
+                <description>Action to be performed when user selects this action</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
